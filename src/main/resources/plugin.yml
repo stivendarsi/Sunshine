@@ -1,0 +1,4 @@
+name: Sunshine
+version: '1'
+main: me.stivendarsi.sunshine.Sunshine
+api-version: '1.21'
