@@ -14,6 +14,16 @@ import java.time.ZoneId;
 
 public final class Sunshine extends JavaPlugin {
 
+    private static JavaPlugin plugin;
+
+    public static JavaPlugin plugin(){
+        return plugin;
+    }
+
+    public static void setPlugin(JavaPlugin c){
+        plugin = c;
+    }
+
     @Override
     public void onEnable() {
 
