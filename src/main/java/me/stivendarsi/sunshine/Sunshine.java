@@ -6,13 +6,13 @@ public final class Sunshine extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+       say();
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        // Plugin shutdosffaffa
     }
 
     public static void say(){}
