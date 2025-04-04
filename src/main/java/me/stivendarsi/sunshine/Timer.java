@@ -11,11 +11,14 @@ public class Timer {
 
     private Runnable task;
 
-    public void start(Runnable task) {
+    public Timer(Runnable task) {
+        this.task = task;
+    }
+
+    public void start() {
         if (service != null && !service.isShutdown()) {
             return;
         }
-
         service = Executors.newSingleThreadScheduledExecutor();
         service.scheduleAtFixedRate(() -> {
             try {
@@ -33,7 +36,7 @@ public class Timer {
 
     public void reload() {
         stop();
-        start(task);
+        start();
     }
 
     public void setDelay(double delay) {
