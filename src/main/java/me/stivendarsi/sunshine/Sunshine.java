@@ -14,4 +14,6 @@ public final class Sunshine extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
+    public static void say(){}
 }
