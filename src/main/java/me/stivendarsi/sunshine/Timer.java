@@ -7,12 +7,13 @@ import java.util.concurrent.TimeUnit;
 
 public class Timer {
     private ScheduledExecutorService service;
-    private double delay = 3.0;
+    private double delay;
 
     private Runnable task;
 
-    public Timer(Runnable task) {
+    public Timer(Runnable task, double delay) {
         this.task = task;
+        this.delay = delay;
     }
 
     public void start() {
