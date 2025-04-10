@@ -25,7 +25,7 @@ public class ComponentUtils  {
                 .tag("player_z", Tag.selfClosingInserting(Component.text(player.getZ())))
                 .build();
 
-
+//
         TagResolver tags = TagResolver.builder()
                 .resolver(Formatter.date("date", LocalDateTime.now(ZoneId.of("Asia/Jerusalem"))))
                 .tag("player_display_name", Tag.selfClosingInserting(player.displayName()))
